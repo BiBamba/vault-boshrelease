@@ -1,8 +1,8 @@
 ---
 meta:
   name:    vault
-  target:  pipes
-  url:     https://pipes.starkandwayne.com
+  target:  cloudpipes@main
+  url:     https://cloudpipes.starkandwayne.com
 
   initial_version: 0.2.1
 
@@ -11,7 +11,7 @@ meta:
     email: ci@starkandwayne.com
 
   bosh-lite:
-    target:   https://10.128.4.73:25555
+    target:   ((thunder-dome.url))
     username: ((thunder-dome.username))
     password: ((thunder-dome.password))
     cacert:   ((thunder-dome.ca-certificate))
@@ -28,7 +28,7 @@ meta:
     access_token: ((github.access-token))
 
   shout:
-    url:      http://10.128.4.65:7109
+    url:      ((shout.url))
     username: ((shout.username))
     password: ((shout.password))
 
